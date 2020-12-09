@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'cards', to: 'cards#index'
+  root to: 'cards#index' #トップページへ遷移
 end
