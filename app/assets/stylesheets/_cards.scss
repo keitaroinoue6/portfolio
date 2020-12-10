@@ -1,7 +1,6 @@
 .Main {
   background-image: url(book1.jpg);
   &__header{
-    background-color: rgba(241, 241, 214, 0.856);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +8,9 @@
     &__nav h1 {
       text-align: center;
       padding: 1em;
-      border: 3px solid rgb(117, 13, 13);
+      border: 3px solid rgb(255,255,255);
       border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;  
-      color: gray;
+      color: #fff;
       font-size: 30px;
       margin-top: 10px;
     }
@@ -26,35 +25,43 @@
     font-size: 40px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(241, 241, 214, 0.856);
     &__left {
       margin: 40px;
       width: 50%;
       &__top {
-        color: red;
+        color: #fff;
       }
       &__text {
-        color: royalblue;
+        color: #fff;
         font-size: 20px;
         line-height: 40px;
         letter-spacing: 5px;
         text-indent: 1em;
+        font-weight: bold;
       }
     }
     &__right {
       margin: 40px;
       width: 50%;
       &__top {
-        color: red;
+        color:#fff;
       }
       &__text {
-        color: royalblue;
+        color: #fff;
         font-size: 20px;
         line-height: 40px;
         letter-spacing: 5px;
         text-indent: 1em;
+        font-weight: bold;
       }
     }
   }
 }
+
+.category {
+  color: #fff;
+}
+
+.Cntent
+  
 
