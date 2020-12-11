@@ -41,29 +41,35 @@
         text-decoration: underline;
       }
     }
-    &__right {
-      margin: 40px;
-      width: 50%;
-      &__top {
-        color:#fff;
+  }
+}
+
+.Content {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  &__like {
+    color: red;
+    &__end {
+      color: blue;
+      &__ul {
+        display: flex;
       }
-      &__text {
-        color: #fff;
-        font-size: 20px;
-        line-height: 40px;
-        letter-spacing: 5px;
-        text-indent: 1em;
-        font-weight: bold;
-        text-decoration: underline;
+      li {
+        margin: 30px;
       }
     }
   }
+
 }
+
 
 .category {
   color: #fff;
 }
 
-img {
+.img {
   height: 300px;
 }
+
+
