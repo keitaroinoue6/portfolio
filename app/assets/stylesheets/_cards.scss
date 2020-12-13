@@ -1,18 +1,22 @@
 .Main {
   background-image: url(book1.jpg);
+  background-size: cover;
+  position: relative;
   &__header{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-weight: bold;
     &__nav h1 {
       text-align: center;
       padding: 1em;
-      border: 3px solid rgb(255,255,255);
+      border: 9px solid rgb(255,255,255);
       border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;  
       color: #fff;
       font-size: 30px;
       margin-top: 10px;
+      font-weight: bold;
     }
     &__nav ul {
       display: flex;
@@ -50,10 +54,23 @@
   justify-content: center;
   &__like {
     color: red;
+    h2 {
+      padding-bottom: .5em;
+      border-bottom: 1px solid #ccc;
+      font-size: 32px;
+      &:first-letter {
+        margin-right: .1em;
+        font-size: 1.5em;
+      }
+    }
     &__end {
       color: blue;
+      font-size: 24px;
+      margin-top: 20px;
       &__ul {
         display: flex;
+        margin-top: 20px;
+        padding: 20px;
       }
       li {
         margin: 30px;
@@ -66,10 +83,23 @@
 
 .category {
   color: #fff;
+  //hoverしたときに背景の変更
+  &:hover {
+    background: #fff;
+    color: #555;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
 }
 
 .img {
   height: 300px;
+  &:hover {
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
 }
 
 
