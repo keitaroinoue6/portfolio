@@ -53,13 +53,13 @@
   &:hover {
     background-image: url(book2.jpg);
     background-size: cover;
-    animation: SlideIn 3.6s;
+    animation: SlideIn 7.6s;
   }
   @keyframes SlideIn {
-    0%{
-      opacity: .6;
+    0% {
+      opacity: 0.5;
     }
-    100%{
+    100% {
       opacity: 1;
     }
   }
@@ -68,11 +68,7 @@
     color:#fff;
     h2 {
       padding: .5em;
-      border-bottom: 1px solid #ccc;
       font-size: 32px;
-      display: flex;
-      justify-content: center;
-      pa
       &:first-letter {
         margin-right: .1em;
         font-size: 1.5em;
@@ -100,7 +96,6 @@
 
 .category {
   color: #fff;
-  //hoverしたときに背景の変更
   &:hover {
     background:#fff;
     color: #555;
