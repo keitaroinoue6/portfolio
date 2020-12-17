@@ -94,7 +94,7 @@
 }
 
 
-.category {
+.categorys {
   color: #fff;
   &:hover {
     background:#fff;
@@ -115,4 +115,44 @@
   }
 }
 
-
+.Data {
+  width: 80%;
+  margin: 80px;
+  &__categorys {
+    text-align: center;
+    margin: 20px;
+    &__category {
+      display: flex;
+      margin: 20px;
+      &__id {
+        color: blue;
+      }
+      &__title {
+        width: 70%;
+        color:red;
+        margin-right: 30px;
+      }
+      &__language {
+        width: 20%;
+        color: green;
+      }
+    }
+  }
+  &__table {
+    margin-top: 15px;
+    &__list {
+      display: flex;
+      margin: 40px;
+      &__id {
+        width: 10%;
+      }
+      &__title {
+        width: 70%;
+        margin-right: 30px;
+      }
+      &__language {
+        width: 20%;
+      }
+    }
+  }
+}
