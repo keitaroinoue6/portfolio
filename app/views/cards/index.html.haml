@@ -61,7 +61,7 @@
 
 .Data
   .Data__categorys
-    登録データ一覧
+    %h2 登録データ一覧
     .Data__categorys__category
       .Data__categorys__category__id
         ID
@@ -70,7 +70,7 @@
       .Data__categorys__category__language
         Language
   .Data__table
-  - @cards.each do |card|
+  - @cards.each do |card| #データを一つずつ取り出す
     .Data__table__list
       .Data__table__list__id
         = card.id
@@ -78,5 +78,9 @@
         = card.title
       .Data__table__list__language
         = card.language
+      .Data__table__list__btn
+        = link_to "編集", edit_card_path(card.id), method: :get
+      .Data__table__list__btn
+        = link_to "削除", card_path(card.id), method: :delete
       
 
