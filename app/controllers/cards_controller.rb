@@ -8,12 +8,6 @@ class CardsController < ApplicationController
   end
 
   def create
-    if request.post? then
-      Card.create(card_params)
-      goback
-    else
-      @card = Card.new
-    end
   end
 
   def edit
