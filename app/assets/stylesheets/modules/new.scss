@@ -7,12 +7,20 @@
       font-size: 32px;
       font-weight: bold;
       text-align: center;
+      padding: .75em 0;
+      border-bottom: 1px solid #ccc;
     }
     &__list {
       color: red;
       margin: 20px;
+      width: 20%;
       &__group{
         margin: 40px;
+        transition: 0.2s;
+        &:hover {
+          transform: translateY(-5px);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -20,4 +28,5 @@
 
 .input-default {
   margin: 20px;
+  padding: 10px;
 }

@@ -1,0 +1,25 @@
+.Add
+  .Add__lists
+    %h1 登録する本のデータの追加
+    .Add__lists__list
+      = form_for @card, url: cards_path, method: :post do |f|
+        .Add__lists__list__group
+          = f.label :言語
+          = f.text_field :language, autofocus: true, placeholder: "例)言語を記入", class: "input-default"
+        .Add__lists__list__group
+          = f.label :タイトル
+          = f.text_field :title, autofocus: true, placeholder: "例)タイトル記入", class: "input-default"
+        .Add__lists__list__group
+          = f.label :著者
+          = f.text_field :author, autofocus: true, placeholder: "例)著者を記入", class: "input-default"
+        .Add__lists__list__group
+          = f.label :価格
+          = f.text_field :price, autofocus: true, placeholder: "例)価格を記入", class: "input-default"
+        .Add__lists__list__group
+          = f.label :出版日
+          = f.text_field :releasedate, autofocus: true, placeholder: "例)出版日を記入", class: "input-default"
+        .Add__lists__list__group
+          = f.label :コメント
+          = f.text_area :memo, autofocus: true, placeholder: "例)コメントを記入", class: "input-default"
+        .Add__lists__list__group
+          = f.submit "保存", class: "save-btn"

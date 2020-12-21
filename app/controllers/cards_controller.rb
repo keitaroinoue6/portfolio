@@ -3,17 +3,29 @@ class CardsController < ApplicationController
     @cards = Card.all
   end
 
-  def show
-    @card = Card.find(params[:id])
+  def new
+    @card = Card.new
   end
 
   def create
-    @card = Card.new
+    Card.create(cards_params)
+    redirect_to '/cards'
   end
+
+
 
   def edit
   end
 
   def destroy
+  end
+
+  def show
+    #@card = Card.find(params[:id])
+  end
+
+  private
+  def cards_params
+    params.require(:card).permit(:language, :title, :price, :author, :memo)
   end
 end
