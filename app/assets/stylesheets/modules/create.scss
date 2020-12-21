@@ -1,0 +1,23 @@
+.Add {
+  margin: 30px;
+  background-color: gray;
+  height: 100%;
+  &__lists  {
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__list {
+      color: red;
+      margin: 20px;
+      &__group{
+        margin: 40px;
+      }
+    }
+  }
+}
+
+.input-default {
+  margin: 20px;
+}

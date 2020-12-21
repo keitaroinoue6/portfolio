@@ -8,6 +8,7 @@ class CardsController < ApplicationController
   end
 
   def create
+    @card = Card.new
   end
 
   def edit
