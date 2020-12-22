@@ -12,16 +12,24 @@ class CardsController < ApplicationController
     redirect_to '/cards'
   end
 
-
-
   def edit
+    @card = Card.find(params[:id])
+  end
+
+  def update
+    card = Card.find(params[:id])
+    card.update(cards_params)
+    redirect_to '/cards'
   end
 
   def destroy
+    card = Card.find(params[:id])
+    card.destroy
+    redirect_to '/cards'
   end
 
   def show
-    #@card = Card.find(params[:id])
+    @card = Card.find(params[:id])
   end
 
   private

@@ -1,1 +1,26 @@
-編集
+.Edit
+  .Edit__main
+    = @card.title
+    の内容を編集
+    .Edit__main__groups
+      = form_for @card, url: card_path, method: :patch do |f|
+        .Edit__main__groups__group
+          = f.label :言語
+          = f.text_field :language, autofocus: true, placeholder: "例)言語を記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.label :タイトル
+          = f.text_field :title, autofocus: true, placeholder: "例)タイトル記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.label :著者
+          = f.text_field :author, autofocus: true, placeholder: "例)著者を記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.label :価格
+          = f.text_field :price, autofocus: true, placeholder: "例)価格を記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.label :出版日
+          = f.text_field :releasedate, autofocus: true, placeholder: "例)出版日を記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.label :コメント
+          = f.text_area :memo, autofocus: true, placeholder: "例)コメントを記入", class: "input-default"
+        .Edit__main__groups__group
+          = f.submit "更新", class: "save-btn"
