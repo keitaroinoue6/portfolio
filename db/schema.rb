@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 2020_12_14_021829) do
 
   create_table "cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "language"
     t.text "title"
-    t.text "author"
     t.integer "price"
-    t.text "publisher"
+    t.datetime "releasedate"
+    t.text "author"
     t.text "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

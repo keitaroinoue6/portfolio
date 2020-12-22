@@ -1,0 +1,55 @@
+.Edit {
+  margin: 30px;
+  height: 100%;
+  font-weight: bolder;
+  &__main {
+    text-align: center;
+    background-image: url(edit.jpg);
+    background-size: cover;
+    animation: slideIn 4.3s;
+    @keyframes slideIn {
+      0% {
+        opacity: .2;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    p {
+      font-size: 32px;
+      padding: 25px;
+      color:#000;
+      text-align: center;
+      animation: fadeIn 3.4s;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+    &__groups {
+      margin: 20px;
+      width: 20%;
+      animation: fadeIn 5.4s;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      &__group {
+        margin: 40px;
+      }
+    }
+  }
+}
+
+.input-default {
+  margin: 20px;
+  padding: 10px;
+}
