@@ -1,8 +1,18 @@
 .Add {
   margin: 30px;
-  background-color: gray;
   height: 100%;
   &__lists  {
+    background-image: url(new.jpg);
+    background-size: cover;
+    animation: slideIn 4.3s;
+    @keyframes slideIn {
+      0% {
+        opacity: .2;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     h1 {
       font-size: 32px;
       font-weight: bold;
@@ -11,7 +21,6 @@
       border-bottom: 1px solid #ccc;
     }
     &__list {
-      color: red;
       margin: 20px;
       width: 20%;
       &__group{

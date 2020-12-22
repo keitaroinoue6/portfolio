@@ -1,7 +1,6 @@
 .Edit
   .Edit__main
-    = @card.title
-    の内容を編集
+    %p= @card.title
     .Edit__main__groups
       = form_for @card, url: card_path, method: :patch do |f|
         .Edit__main__groups__group
