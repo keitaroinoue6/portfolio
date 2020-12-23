@@ -33,7 +33,7 @@ class CardsController < ApplicationController
   end
 
   def search
-    @card = Card.search(params[:keyword])
+    @cards = Card.search(params[:keyword])
   end
 
   private
