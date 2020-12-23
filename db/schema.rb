@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_12_14_021829) do
     t.string "language"
     t.text "title"
     t.integer "price"
-    t.datetime "releasedate"
+    t.string "releasedate"
     t.text "author"
     t.text "memo"
     t.datetime "created_at", precision: 6, null: false

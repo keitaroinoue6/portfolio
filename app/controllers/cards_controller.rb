@@ -32,8 +32,12 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
   end
 
+  def search
+    @card = Card.search(params[:keyword])
+  end
+
   private
   def cards_params
-    params.require(:card).permit(:language, :title, :price, :author, :memo)
+    params.require(:card).permit(:language, :title, :releasedate, :price, :author, :memo)
   end
 end

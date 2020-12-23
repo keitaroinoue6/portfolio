@@ -12,7 +12,7 @@
       text-align: center;
       padding: 1em;
       border: 9px solid rgb(255,255,255);
-      border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;  
+      border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;  //手書き風の枠の作成
       color: #fff;
       font-size: 30px;
       margin-top: 10px;
@@ -23,6 +23,10 @@
       align-items: center;
       justify-content: space-between;
       height: 80px;
+      font-size: 20px;
+    }
+    &__nav li {
+      margin: 10px;
     }
   }
   &__body {
@@ -46,6 +50,11 @@
       }
     }
   }
+}
+
+.search {    //検索機能
+  position: relative;
+  left: 180px;
 }
 
 .Content {
