@@ -34,6 +34,7 @@ class CardsController < ApplicationController
 
   def search
     @cards = Card.search(params[:keyword])
+    @keyword = params[:keyword]
   end
 
   private

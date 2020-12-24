@@ -12,9 +12,9 @@
         %li
         = link_to "#", class: "categorys" do
           その他
-        = form_with(url: search_cards_path, local: true, method: :get, class: "search") do |f|
-          = f.text_field :keyword, placeholder: "検索", class: "search"
-          = f.submit "検索", class: "search"
+        = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
+          = f.text_field :keyword, placeholder: "検索", class: "search-top"
+          = f.submit "検索", class: "search-top"
           
   .Main__body
     .Main__body__left
@@ -72,20 +72,8 @@
         Title
       .Data__categorys__category__language
         Language
-  .Data__table
-  - @cards.each do |card| #データを一つずつ取り出す
-    .Data__table__list
-      .Data__table__list__id
-        = card.id
-      .Data__table__list__title
-        = card.title
-      .Data__table__list__language
-        = card.language
-      .Data__table__list__btn
-        = link_to "編集", edit_card_path(card.id), method: :get
-      .Data__table__list__btn
-        = link_to "削除", card_path(card.id), method: :delete
-      
+  = render partial: "card"
+
 .New
   .New__book
     = link_to "新しい本の追加", new_card_path, method: :get
