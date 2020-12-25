@@ -1,0 +1,13 @@
+.Show {
+  margin: 30px;
+  &__main {
+    padding-bottom: 20px;
+    &__contents {
+      &__list {
+        margin: 30px;
+      }
+      &__column {
+      }
+    }
+  }
+}
