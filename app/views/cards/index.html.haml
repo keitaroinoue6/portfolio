@@ -2,15 +2,28 @@
   .Main__header
     .Main__header__nav
       %h1 エンジニアのための本
-      %ul
-        %li
-        = link_to "#", class: "categorys" do
+      %ul.menu
+        %li 
           フロントエンド
+          %ul.sub
+            %li
+              = link_to "HTML"
+            %li
+              = link_to "CSS"
+            %li
+              = link_to "Javascript"
         %li
-        = link_to "#", class: "categorys" do
           バックエンド
+          %ul.sub
+            %li
+              = link_to "Java" 
+            %li
+              = link_to "PHP"
+            %li
+              = link_to "Python"
+            %li
+              = link_to "Ruby"            
         %li
-        = link_to "#", class: "categorys" do
           その他
         = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
           = f.text_field :keyword, placeholder: "検索", class: "search-top"
