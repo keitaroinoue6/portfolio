@@ -1,0 +1,20 @@
+.Search-main {
+  margin: 30px;
+  height: 100%;
+  &__top {
+    color: red;
+    text-align: center;
+    &__form {
+      font-size: 32px;
+      &__input {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__result {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+}
+

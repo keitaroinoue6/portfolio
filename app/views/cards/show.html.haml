@@ -1,1 +1,36 @@
+.Show
+  .Show__main
+    = "「#{@card.title}」の詳細"
+  .Show__contents
+    .Show__contents__list
+      ID
+    .Show__contents__column
+      = @card.id
+    .Show__contents__list
+      言語
+    .Show__contents__column
+      = @card.language
+    .Show__contents__list
+      タイトル
+    .Show__contents__column
+      = @card.title
+    .Show__contents__list
+      著者
+    .Show__contents__column
+      = @card.author
+    .Show__contents__list
+      価格
+    .Show__contents__column
+      = @card.price
+    .Show__contents__list
+      出版日
+    .Show__contents__column
+      = @card.releasedate
+    .Show__contents__list
+      コメント
+    .Show__contents__column
+      = @card.memo
+
+=  render partial: "top"
+
 

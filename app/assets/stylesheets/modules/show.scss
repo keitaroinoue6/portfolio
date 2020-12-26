@@ -1,0 +1,51 @@
+.Show {
+  margin: 10px;
+  background-image: url(show.jpg);
+  background-size: cover;
+  color: azure;
+  &__main {
+    text-align: center;
+    border-bottom: solid 3px #8a868b;
+    font-size: 32px;
+    padding-top: 20px;
+    animation: slideIn 3.5s;
+  }
+  &__contents {
+    animation: fadeIn 4.5s;
+    &__list {
+      margin: 30px;
+      font-family: serif;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    &__column {
+      padding-left: 50px;
+      background: linear-gradient(transparent 90%, #8a868b 75%);
+    }
+  }
+}
+
+.Return {
+  margin: 15px;
+  text-align: center;
+  &__btn {
+    position: relative;
+    border-radius: 4px;
+    line-height: 50px;
+    transform: none;
+    box-shadow: 0 3px 0 #8a868b;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    &:hover {
+      top: -4px;
+      box-shadow: 0 7px 0 #f7ba59;
+    }
+    &:active {
+      top: 3px;
+      box-shadow: none;
+    }
+    a {
+      text-decoration: none;
+      color: #000000
+    }
+  }
+}

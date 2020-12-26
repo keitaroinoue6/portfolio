@@ -1,0 +1,13 @@
+.Data__table
+- @cards.each do |card| #データを一つずつ取り出す
+  .Data__table__list
+    .Data__table__list__id
+      = card.id
+    .Data__table__list__title
+      = link_to "#{card.title}", card_path(card.id), method: :get
+    .Data__table__list__language
+      = card.language
+    .Data__table__list__btn
+      = link_to "編集", edit_card_path(card.id), method: :get
+    .Data__table__list__btn
+      = link_to "削除", card_path(card.id), method: :delete
