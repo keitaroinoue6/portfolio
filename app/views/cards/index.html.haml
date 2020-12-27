@@ -11,7 +11,7 @@
             %li
               = link_to "CSS"
             %li
-              = link_to "Javascript"
+              = link_to "Javascript" 
         %li
           バックエンド
           %ul.sub
@@ -22,12 +22,12 @@
             %li
               = link_to "Python"
             %li
-              = link_to "Ruby"            
+              = link_to "Ruby"
         %li
           その他
         = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
           = f.text_field :keyword, placeholder: "検索", class: "search-top"
-          = f.submit "検索", class: "search-top"          
+          = f.submit "検索", class: "search-top"
   .Main__body
     .Main__body__left
       .Main__body__left__top
