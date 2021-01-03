@@ -54,7 +54,8 @@
 
 .search-top {    //検索機能
   position: relative;
-  left: 180px;
+  left: 20px;
+  padding-left: 5px;
 }
 
 .Content {
@@ -122,6 +123,7 @@
   }
 }
 
+//データの一覧表示
 .Data {
   margin: 80px;
   &__categorys {
@@ -154,6 +156,7 @@
       margin: 40px;
       a {
         text-decoration: none;  //下線の消去
+        color: #000;
       }
       &__id {
         width: 5%;
@@ -208,7 +211,7 @@
     }
   }
 }
-
+// 新しい本の追加
 .New {
   text-align: center;
   &__book {
@@ -221,10 +224,53 @@
     transition: all 0.3s ease 0s;
     a {
       text-decoration: none;
+      color: #000;
     }
     &:hover {
       box-shadow: 0 3px 6px 0 rgba(0,0,0,0.25);
       transform: translateY(-0.4em);
+    }
+  }
+}
+
+//プルダウンメニュー
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color:#000;
+
+  li {
+    float: left;
+    position: relative;
+    margin: 0 0 0 9px;
+    padding: 3px;
+    width: 160px;
+    background: #fff;
+    display: block;
+  }
+
+  .sub {
+    display: none;
+    position: absolute;
+    margin-left: -6px;
+    padding: 0;
+    font-size: 16px;
+
+    li a {
+      padding: 5px 10px;
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: -5px;
+      display: block;
+      color:#000;
+      text-decoration: none;
+      transition: all 0.2s ease 0s;
+      &:hover {
+        text-decoration: none;
+        text-decoration: underline;
+        transform: translateY(-2px);
+      }
     }
   }
 }
