@@ -55,6 +55,7 @@
 .search-top {    //検索機能
   position: relative;
   left: 20px;
+  padding-left: 5px;
 }
 
 .Content {
@@ -122,6 +123,7 @@
   }
 }
 
+//データの一覧表示
 .Data {
   margin: 80px;
   &__categorys {
@@ -209,7 +211,7 @@
     }
   }
 }
-
+// 新しい本の追加
 .New {
   text-align: center;
   &__book {
@@ -231,6 +233,7 @@
   }
 }
 
+//プルダウンメニュー
 .menu {
   list-style-type: none;
   margin: 0;
