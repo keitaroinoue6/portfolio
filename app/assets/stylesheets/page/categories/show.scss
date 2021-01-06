@@ -1,0 +1,12 @@
+.Table {
+  margin: 20px;
+  height: 100%;
+  &__title {
+    color: red;
+    text-align: center;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-around;
+  }
+}

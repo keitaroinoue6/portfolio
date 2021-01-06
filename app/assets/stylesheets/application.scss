@@ -1,8 +1,9 @@
 @import "reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "modules/index.scss";
-@import "modules/new.scss";
-@import "modules/edit.scss";
-@import "modules/search.scss";
-@import "modules/show.scss";
+@import "page/cards/index.scss";
+@import "page/cards/new.scss";
+@import "page/cards/edit.scss";
+@import "page/cards/search.scss";
+@import "page/cards/show.scss";
+@import "page/categories/show.scss";
