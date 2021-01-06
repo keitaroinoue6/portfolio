@@ -7,6 +7,7 @@ class CreateCards < ActiveRecord::Migration[6.0]
       t.string :releasedate
       t.text :author
       t.text :memo
+      
 
       t.timestamps
     end
