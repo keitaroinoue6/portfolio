@@ -19,6 +19,9 @@
           = f.label :出版日
           = f.text_field :releasedate, autofocus: true, placeholder: "例)出版日を記入", class: "input-default"
         .Add__lists__list__group
+          = f.label :カテゴリー番号
+          = f.text_field :category_id, autofocus: true, placeholder: "例)カテゴリー番号を記入", class: "input-default"
+        .Add__lists__list__group
           = f.label :コメント
           = f.text_area :memo, autofocus: true, placeholder: "例)コメントを記入", class: "input-default"
         .Add__lists__list__group
