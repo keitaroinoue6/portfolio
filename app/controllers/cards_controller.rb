@@ -2,7 +2,7 @@ class CardsController < ApplicationController
   before_action :set_card, only: [:edit, :show]
   #before_action :goback, only: [:update, :destroy]
   def index
-    @cards = Card.all#.page(params[:page]).per(6)
+    @cards = Card.all.page(params[:page]).per(6)
   end
 
   def new
@@ -42,7 +42,7 @@ class CardsController < ApplicationController
   private
 
   def cards_params
-    params.require(:card).permit(:language, :title, :releasedate, :price, :author, :memo)
+    params.require(:card).permit(:language, :title, :releasedate, :price, :author, :memo, :category_id)
   end
 
   def set_card
