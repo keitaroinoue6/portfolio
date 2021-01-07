@@ -11,3 +11,5 @@
       = link_to "編集", edit_card_path(card.id), method: :get
     .Data__table__list__btn
       = link_to "削除", card_path(card.id), method: :delete
+//= paginate @cards
+

@@ -1,5 +1,5 @@
 class Card < ApplicationRecord
-  belongs_to :category
+  belongs_to :category, optional: true
   def self.search(search) #self.クラスメソッド
     if search != ""
       Card.where('language LIKE(?) or title LIKE(?)', "%#{search}%","%#{search}%").order('id DESC') #言語、タイトルで検索することが可能

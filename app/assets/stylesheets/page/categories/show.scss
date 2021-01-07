@@ -1,0 +1,14 @@
+.Table {
+  margin: 20px;
+  height: 100%;
+  &__title {
+    color: red;
+    text-align: center;
+  }
+  &__lists {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
