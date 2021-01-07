@@ -2,7 +2,7 @@ class CardsController < ApplicationController
   before_action :set_card, only: [:edit, :show]
   #before_action :goback, only: [:update, :destroy]
   def index
-    @cards = Card.all#.page(params[:page]).per(6)
+    @cards = Card.all.page(params[:page]).per(6)
   end
 
   def new
