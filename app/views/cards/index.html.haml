@@ -9,20 +9,20 @@
             %li
               = link_to "HTML", card_category_path(:card_id, :id), method: :get
             %li
-              = link_to "CSS"#, card_category_path(:card_id, :id), method: :get
+              = link_to "CSS", card_category_path(:card_id, :id), method: :get
             %li
-              = link_to "Javascript"#, card_category_path(:card_id, :id), method: :get
+              = link_to "Javascript", card_category_path(:card_id, :id), method: :get
         %li
           バックエンド
           %ul.sub
             %li
-              = link_to "Java"#, card_category_path(:card_id, :id), method: :get
+              = link_to "Java", card_category_path(:card_id, :id), method: :get
             %li
-              = link_to "PHP"#, card_category_path(:card_id, :id), method: :get
+              = link_to "PHP", card_category_path(:card_id, :id), method: :get
             %li
-              = link_to "Python"#, card_category_path(:card_id, :id), method: :get
+              = link_to "Python", card_category_path(:card_id, :id), method: :get
             %li
-              = link_to "Ruby"#, card_category_path(:card_id, :id), method: :get
+              = link_to "Ruby", card_category_path(:card_id, :id), method: :get
         = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
           = f.text_field :keyword, placeholder: "検索", class: "search-top"
           = f.submit "検索", class: "search-top"

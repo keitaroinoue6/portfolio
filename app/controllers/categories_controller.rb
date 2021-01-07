@@ -4,6 +4,6 @@ class CategoriesController < ApplicationController
     #@items = @category.cards.order('created_at DESC')
     #@categories = Category.all
     #@category = Category.find(params[:id])
-    @cards = Card.where(category_id: 2)
+    @cards = Card.where(language: "HTML")
   end
 end

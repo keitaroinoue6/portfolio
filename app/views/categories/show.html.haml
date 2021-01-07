@@ -1,11 +1,11 @@
 .Table
-  - @cards.each do |card|
-    .Table__title
-      = "「#{card.language}」の登録一覧"
-    .Table__lists
+  .Table__title
+    = "「HTML」の登録一覧"
+  .Table__lists
+    - @cards.each do |card|
       .Table__lists__list
         = card.title
-      .Table__lists__btn
-        = link_to "編集", edit_card_path(card.id), method: :get
-      .Table__lists__btn
-        = link_to "削除", card_path(card.id), method: :delete
+        .Table__lists__list__btn
+          = link_to "編集", edit_card_path(card.id), method: :get
+        .Table__lists__list__btn
+          = link_to "削除", card_path(card.id), method: :delete

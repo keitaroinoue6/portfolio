@@ -6,7 +6,9 @@
     text-align: center;
   }
   &__lists {
-    display: flex;
-    justify-content: space-around;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
