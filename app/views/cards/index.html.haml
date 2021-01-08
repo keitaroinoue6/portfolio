@@ -7,11 +7,11 @@
           フロントエンド
           %ul.sub
             %li
-              = link_to "①HTML", card_category_path(:card_id, :id), method: :get
+              = link_to "①HTML", card_category_path(:card_id, 2, :category_id, 2), method: :get
             %li
-              = link_to "②CSS", card_category_path(:card_id, :id), method: :get
+              = link_to "②CSS", card_category_path(:card_id, 2), method: :get
             %li
-              = link_to "③Javascript", card_category_path(:card_id, :id), method: :get
+              = link_to "③Javascript", card_category_path(:card_id, 3), method: :get
         %li
           バックエンド
           %ul.sub

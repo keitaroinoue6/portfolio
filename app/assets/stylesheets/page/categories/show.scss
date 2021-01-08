@@ -2,13 +2,53 @@
   margin: 20px;
   height: 100%;
   &__title {
-    color: red;
+    color: #333;
     text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
   }
   &__lists {
+    display: flex;
+    padding: 40px;
     &__list {
-      display: flex;
-      justify-content: space-between;
+      width: 70%;
+      margin-right: 30px;
+      font-size: 22px;
+      position: relative;
+      display: inline-block;
+      color: #1b1b1b;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      &:after {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+      }
+      &:hover::after {
+        bottom: -4px;
+        opacity: 2;
+        visibility: visible;
+      }
+    }
+    &__btn {
+      padding-left: 90px;
+      a {
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          border-bottom: double #333;
+        }
+      }
     }
   }
 }

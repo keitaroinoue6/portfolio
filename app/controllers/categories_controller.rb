@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
     #@categories = Category.all
     #@category = Category.find(params[:id])
     @cards = Card.where(category_id: 2)
-    #@card = Card.find_by(language: )
+    #@card = Card.find_by(language: "HTML")
 
   end
 end
