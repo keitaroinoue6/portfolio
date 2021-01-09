@@ -23,6 +23,6 @@
               = link_to "⑥Python", card_category_path(:card_id, 6)
             %li
               = link_to "⑦Ruby", card_category_path(:card_id, 7)
-        = form_with(url: search_cards_path, local: true, class: "search-top") do |f|
+        = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
           = f.text_field :keyword, placeholder: "検索", class: "search-top"
           = f.submit "検索", class: "search-top"
