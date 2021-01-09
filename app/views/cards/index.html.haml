@@ -7,7 +7,7 @@
           フロントエンド
           %ul.sub
             %li
-              = link_to "①HTML", card_category_path(:card_id, 2, :category_id, 2), method: :get
+              = link_to "①HTML", card_category_path(:card_id ,1), method: :get
             %li
               = link_to "②CSS", card_category_path(:card_id, 2), method: :get
             %li
@@ -16,13 +16,13 @@
           バックエンド
           %ul.sub
             %li
-              = link_to "④Java", card_category_path(:card_id, :id), method: :get
+              = link_to "④Java", card_category_path(:card_id, 4), method: :get
             %li
-              = link_to "⑤PHP", card_category_path(:card_id, :id), method: :get
+              = link_to "⑤PHP", card_category_path(:card_id, 5), method: :get
             %li
-              = link_to "⑥Python", card_category_path(:card_id, :id), method: :get
+              = link_to "⑥Python", card_category_path(:card_id, 6), method: :get
             %li
-              = link_to "⑦Ruby", card_category_path(:card_id, :id), method: :get
+              = link_to "⑦Ruby", card_category_path(:card_id, 7), method: :get
         = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
           = f.text_field :keyword, placeholder: "検索", class: "search-top"
           = f.submit "検索", class: "search-top"
