@@ -7,30 +7,30 @@
           %span
           %span
           %span
-      %ul.menu
-        %li 
-          フロントエンド
-          %ul.sub
-            %li
-              = link_to "①HTML", card_category_path(:card_id ,1)
-            %li
-              = link_to "②CSS", card_category_path(:card_id, 2)
-            %li
-              = link_to "③Javascript", card_category_path(:card_id, 3)
-        %li
-          バックエンド
-          %ul.sub
-            %li
-              = link_to "④Java", card_category_path(:card_id, 4)
-            %li
-              = link_to "⑤PHP", card_category_path(:card_id, 5)
-            %li
-              = link_to "⑥Python", card_category_path(:card_id, 6)
-            %li
-              = link_to "⑦Ruby", card_category_path(:card_id, 7)
-        = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
-          = f.text_field :keyword, placeholder: "検索", class: "search-top"
-          = f.submit "検索", class: "search-top"
+        %ul.menu
+          %li 
+            フロントエンド
+            %ul.sub
+              %li
+                = link_to "①HTML", card_category_path(:card_id ,1)
+              %li
+                = link_to "②CSS", card_category_path(:card_id, 2)
+              %li
+                = link_to "③Javascript", card_category_path(:card_id, 3)
+          %li
+            バックエンド
+            %ul.sub
+              %li
+                = link_to "④Java", card_category_path(:card_id, 4)
+              %li
+                = link_to "⑤PHP", card_category_path(:card_id, 5)
+              %li
+                = link_to "⑥Python", card_category_path(:card_id, 6)
+              %li
+                = link_to "⑦Ruby", card_category_path(:card_id, 7)
+          = form_with(url: search_cards_path, local: true, method: :get, class: "search-top") do |f|
+            = f.text_field :keyword, placeholder: "検索", class: "search-top"
+            = f.submit "検索", class: "search-top"
   .Main__body
     .Main__body__left
       .Main__body__left__top
