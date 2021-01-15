@@ -303,7 +303,7 @@
   }
 
   .Main__header__nav ul {
-    display: none;
+    display: none; //ブラウザが縮小した時に消去
   }
   
   .nav-button {
