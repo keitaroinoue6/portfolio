@@ -302,7 +302,7 @@
     cursor: pointer;
   }
 
-  .Main__header__nav ul {
+  nav {
     display: none; //ブラウザが縮小した時に消去
   }
   
@@ -312,7 +312,7 @@
     width: 30px;
     height: 26px;
 
-    span {
+    span { //三本線の幅など
       display: inline-block;
       position: absolute;
       left: 0;
