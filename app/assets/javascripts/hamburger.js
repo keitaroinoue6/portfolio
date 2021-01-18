@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("humburger").addEventListener("click", function() {
-   this.classList.toggle("active")
+  document.getElementsByClassName("hamburger")[0].addEventListener('click', function() {
+    this.classList.toggle("active");
+    // document.getElementById("nav").classList.toggle("active");
   })
- });
+});

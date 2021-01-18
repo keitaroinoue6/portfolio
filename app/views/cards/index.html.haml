@@ -2,7 +2,7 @@
   .Main__header
     .Main__header__nav
       %h1 エンジニアのための本
-      %section.hamburger
+      .hamburger
         .nav-button
           = link_to ""
           %span
@@ -98,3 +98,30 @@
   .New__book
     = link_to "新しい本の追加", new_card_path
 
+-# %body
+-#   %header
+-#     %input#menu-cb{:type => "checkbox", :value => "off"}/
+-#     %label#menu-icon{:for => "menu-cb"}
+-#     #ham-menu
+-#       %ul.header-items-sp
+-#         %li.header-item-sp
+-#           = link_to "①HTML", card_category_path(:card_id ,1)
+-#         %li.header-item-sp 
+-#           = link_to "②CSS", card_category_path(:card_id, 2)
+-#         %li.header-item-sp
+-#           = link_to "③Javascript", card_category_path(:card_id, 3)
+-#         %li.header-item-sp
+-#           = link_to "④Java", card_category_path(:card_id, 4)
+-#         %li.header-item-sp
+-#           = link_to "⑤PHP", card_category_path(:card_id, 5)
+-#         %li.header-item-sp
+-#           = link_to "⑥Python", card_category_path(:card_id, 6)
+-#         %li.header-item-sp 
+-#           = link_to "⑦Ruby", card_category_path(:card_id, 7)
+    -# %ul.header-items
+    -#   %li.header-item
+    -#     = link_to "①HTML", card_category_path(:card_id ,1)
+    -#   %li.header-item
+    -#     %a{:href => ""} Works
+    -#   %li.header-item
+    -#     %a{:href => ""} Contact
