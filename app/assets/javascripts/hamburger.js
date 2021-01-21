@@ -1,6 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementsByClassName("hamburger")[0].addEventListener("click", function() {
-    this.classList.toggle("active");
-    // document.getElementById("nav").classList.toggle("active");
-  })
+$(function() {
+  $('.hamburger').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.nav-button').addClass('active');
+      } else {
+          $('.nav-button').removeClass('active');
+      }
+  });
 });
