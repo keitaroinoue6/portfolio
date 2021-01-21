@@ -7,5 +7,12 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application'
-  %body
-  = yield
+    %body
+      -# :javascript
+      -#   document.addEventListener('DOMContentLoaded', function() {
+      -#     document.getElementsByClassName("hamburger")[0].addEventListener('click', function() {
+      -#       this.classList.toggle("active");
+      -#       document.getElementById("nav").classList.toggle("active");
+      -#     })
+      -#   });
+    = yield
