@@ -327,7 +327,7 @@
       }
     }
   
-    &.active span {   //×に変更
+    &.active span {   //×に変更するためのコード
       &:nth-child(1) {
         top: 16px;
         left: 6px;
@@ -347,18 +347,23 @@
     }
   }
   
-  /* ナビ開いてる時のボタン */
+  // ナビ開いてる時のボタン 
   
   nav.nav-button {
     position: fixed;
     z-index: 1;
     top: 20px; //メニューバーの高さ調整
     left: 0px;
-    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+    height: 100vh;  //これが無いと領域外でタップした時の範囲が狭くなる
     opacity: 0;
-    transition: opacity .6s ease, visibility .6s ease;
+    transition: opacity .6s ease, visibility .6s ease; //メニューが出てくるのに対して時間を設定
+
+    .menu {
+      background: rgba(0,0,0,0.7);
+      margin-top: 20px;
+    }
   
     ul {
       margin: 0 auto;
@@ -370,29 +375,28 @@
         padding: 0;
         width: 100%;
   
-        &:last-child {
+        &:last-child { //プルダウンメニューのしたの余白
           padding-bottom: 0;
         }
   
         &:hover { //リストにカーソルが乗った時に#dddに変化
           background: #ddd;
         }
-  
+
         a {
           display: block;
-          color: red;
-          padding: 1em 0;
-          text-decoration: none;
         }
       }
     }
   
-    &.active {
+    &.active {  // このクラスを、jQueryで付与・削除する 
       opacity: 100;
     }
   }
-  
-  /* このクラスを、jQueryで付与・削除する */
+  .search-top {
+    display: block
+  }
+}
   // .hamburger {
   //   display: block;
   //   position: absolute;
@@ -463,4 +467,3 @@
   //     }
   //   }
   // }
-}
