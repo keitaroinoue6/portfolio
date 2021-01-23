@@ -359,7 +359,7 @@
     height: 100vh;  //これが無いと領域外でタップした時の範囲が狭くなる
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease; //メニューが出てくるのに対して時間を設定
-
+    pointer-events: none;
     .menu {
       background: rgba(0,0,0,0.7);
       margin-top: 20px;
