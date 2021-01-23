@@ -389,7 +389,8 @@
       }
     }
   
-    &.active {  // このクラスを、jQueryで付与・削除する 
+    &.active {  // このクラスを、jQueryで付与・削除する
+      pointer-events: auto;
       opacity: 100;
     }
   }
