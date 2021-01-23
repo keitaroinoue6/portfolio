@@ -124,3 +124,36 @@
     -#   %li.header-item
     -#     %a{:href => ""} Contact
 
+.swiper-container
+  / メイン表示部分
+  .swiper-wrapper
+    / 各スライド
+    .swiper-slide
+      %img{:alt => "", :src => "/assets/01.jpg", :style => "width: 100%; height: 100%;"}/
+    .swiper-slide
+      %img{:alt => "", :src => "/assets/02.jpg", :style => "width: 100%; height: 100%;"}/
+    .swiper-slide
+      %img{:alt => "", :src => "/assets/03.jpg", :style => "width: 100%; height: 100%;"}/
+  .swiper-button-prev
+  .swiper-button-next
+  .swiper-pagination
+%script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
+:javascript
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,        //画像のループ
+    effect: 'slide',   //切り替わるときのアニメーション
+    speed: 3000,       //画像の切替スピード
+    autoplay: {        //自動で動かす
+      delay: 3000,
+      disableOnInteraction: true
+    },
+    pagination: {      //ページネーション
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {      //ナビケーション
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

@@ -3,16 +3,11 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Portfolio
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css", :rel => "stylesheet"}/
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application'
     %body
-      -# :javascript
-      -#   document.addEventListener('DOMContentLoaded', function() {
-      -#     document.getElementsByClassName("hamburger")[0].addEventListener('click', function() {
-      -#       this.classList.toggle("active");
-      -#       document.getElementById("nav").classList.toggle("active");
-      -#     })
-      -#   });
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
     = yield
