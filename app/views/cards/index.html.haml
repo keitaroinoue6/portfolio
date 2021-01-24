@@ -55,27 +55,30 @@
     .Content__like__end
       フロントエンド編
       %ul.Content__like__end__ul
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
           = image_tag "recommended/front1.jpg", class: "img"
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
           = image_tag "recommended/front2.jpg", class: "img"
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
           = image_tag "recommended/front3.jpg", class: "img"
     .Content__like__end
       バックエンド編
       %ul.Content__like__end__ul
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/4297114623", class: "categorys-book" do
           = image_tag "recommended/back1.jpg", class: "img"
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/4295003867", class: "categorys-book" do
           = image_tag "recommended/back2.jpg", class: "img"
-        %li
+        %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/B07Z63J7Z4", class: "categorys-book" do
           = image_tag "recommended/back3.jpg", class: "img"
+    .swiper-button-prev
+    .swiper-button-next 
+    .swiper-pagination
 
 .Data
   .Data__categorys
@@ -96,64 +99,41 @@
   .New__book
     = link_to "新しい本の追加", new_card_path
 
--# %body
--#   %header
--#     %input#menu-cb{:type => "checkbox", :value => "off"}/
--#     %label#menu-icon{:for => "menu-cb"}
--#     #ham-menu
--#       %ul.header-items-sp
--#         %li.header-item-sp
--#           = link_to "①HTML", card_category_path(:card_id ,1)
--#         %li.header-item-sp 
--#           = link_to "②CSS", card_category_path(:card_id, 2)
--#         %li.header-item-sp
--#           = link_to "③Javascript", card_category_path(:card_id, 3)
--#         %li.header-item-sp
--#           = link_to "④Java", card_category_path(:card_id, 4)
--#         %li.header-item-sp
--#           = link_to "⑤PHP", card_category_path(:card_id, 5)
--#         %li.header-item-sp
--#           = link_to "⑥Python", card_category_path(:card_id, 6)
--#         %li.header-item-sp 
--#           = link_to "⑦Ruby", card_category_path(:card_id, 7)
-    -# %ul.header-items
-    -#   %li.header-item
-    -#     = link_to "①HTML", card_category_path(:card_id ,1)
-    -#   %li.header-item
-    -#     %a{:href => ""} Works
-    -#   %li.header-item
-    -#     %a{:href => ""} Contact
-
 .swiper-container
   / メイン表示部分
   .swiper-wrapper
     / 各スライド
     .swiper-slide
-      %img{:alt => "", :src => "/assets/01.jpg", :style => "width: 100%; height: 100%;"}/
+      = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
+        = image_tag "recommended/front1.jpg", class: "img"
+
     .swiper-slide
-      %img{:alt => "", :src => "/assets/02.jpg", :style => "width: 100%; height: 100%;"}/
+      = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
+        = image_tag "recommended/front2.jpg", class: "img"
+
     .swiper-slide
-      %img{:alt => "", :src => "/assets/03.jpg", :style => "width: 100%; height: 100%;"}/
+      = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
+        = image_tag "recommended/front3.jpg", class: "img"
   .swiper-button-prev
   .swiper-button-next
   .swiper-pagination
 %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
-:javascript
-  var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,        //画像のループ
-    effect: 'slide',   //切り替わるときのアニメーション
-    speed: 3000,       //画像の切替スピード
-    autoplay: {        //自動で動かす
-      delay: 3000,
-      disableOnInteraction: true
-    },
-    pagination: {      //ページネーション
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {      //ナビケーション
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+-# :javascript
+-#   var mySwiper = new Swiper ('.swiper-container', {
+-#     loop: true,        //画像のループ
+-#     effect: 'slide',   //切り替わるときのアニメーション
+-#     speed: 3000,       //画像の切替スピード
+-#     autoplay: {        //自動で動かす
+-#       delay: 3000,
+-#       disableOnInteraction: true
+-#     },
+-#     pagination: {      //ページネーション
+-#       el: '.swiper-pagination',
+-#       type: 'bullets',
+-#       clickable: true
+-#     },
+-#     navigation: {      //ナビケーション
+-#       nextEl: '.swiper-button-next',
+-#       prevEl: '.swiper-button-prev',
+-#     },
+-#   });
