@@ -54,16 +54,29 @@
     %h2 オススメ一覧
     .Content__like__end
       フロントエンド編
-      %ul.Content__like__end__ul
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
-          = image_tag "recommended/front1.jpg", class: "img"
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
-          = image_tag "recommended/front2.jpg", class: "img"
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
-          = image_tag "recommended/front3.jpg", class: "img"
+      .Content__like__end__swiper-container
+        .Content__like__end__swiper-container__wrapper
+          .Content__like__end__swiper-container__wrapper__slide
+            = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
+              = image_tag "recommended/front1.jpg", class: "img"
+          .Content__like__end__swiper-container__wrapper__slide
+            = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
+              = image_tag "recommended/front2.jpg", class: "img"
+          .Content__like__end__swiper-container__wrapper__slide
+            = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
+              = image_tag "recommended/front3.jpg", class: "img"
+
+
+      -# %ul.Content__like__end__ul
+      -#   %li.Content__like__end__ul__li
+      -#   = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
+      -#     = image_tag "recommended/front1.jpg", class: "img"
+      -#   %li.Content__like__end__ul__li
+      -#   = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
+      -#     = image_tag "recommended/front2.jpg", class: "img"
+      -#   %li.Content__like__end__ul__li
+      -#   = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
+      -#     = image_tag "recommended/front3.jpg", class: "img"
     .Content__like__end
       バックエンド編
       %ul.Content__like__end__ul
@@ -76,9 +89,9 @@
         %li.Content__like__end__ul__li
         = link_to "https://amazon.co.jp/dp/B07Z63J7Z4", class: "categorys-book" do
           = image_tag "recommended/back3.jpg", class: "img"
-    .swiper-button-prev
-    .swiper-button-next 
-    .swiper-pagination
+    -# .swiper-button-prev
+    -# .swiper-button-next 
+    -# .swiper-pagination
 
 .Data
   .Data__categorys
@@ -117,7 +130,7 @@
   .swiper-button-prev
   .swiper-button-next
   .swiper-pagination
-%script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
+-# %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
 -# :javascript
 -#   var mySwiper = new Swiper ('.swiper-container', {
 -#     loop: true,        //画像のループ
