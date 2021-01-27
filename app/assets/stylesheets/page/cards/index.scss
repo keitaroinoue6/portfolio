@@ -92,14 +92,18 @@
       font-size: 24px;
       margin: 50px;
       
-      &__ul {
+      &__swiper-container {
         display: flex;
         margin-top: 20px;
         padding: 20px;
         justify-content: center;
-      }
-      li {
-        margin: 30px;
+        &__wrapper {
+          margin: 30px;
+          display: flex;
+          &__slide {
+            margin: 30px;
+          }
+        }
       }
     }
   }

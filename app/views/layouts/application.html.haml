@@ -8,6 +8,7 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application'
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css", :rel => "stylesheet"}/
+    %script{:src => "https://code.jquery.com/jquery-3.3.1.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"}
   %body
     = yield
-    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
