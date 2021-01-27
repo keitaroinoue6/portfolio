@@ -50,53 +50,43 @@
 /フロントエンド、バックエンドの説明まで
 
 .Content
-  .Content__like 
+  .Content__like
     %h2 オススメ一覧
     .Content__like__end
       フロントエンド編
-      .Content__like__end__swiper-container
-        .Content__like__end__swiper-container__swiper-wrapper
-          .Content__like__end__swiper-container__swiper-wrapper__swiper-slide
+      //swiperの実装
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
             = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
               = image_tag "recommended/front1.jpg", class: "img"
-          .Content__like__end__swiper-container__swiper-wrapper__swiper-slide
+          .swiper-slide
             = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
               = image_tag "recommended/front2.jpg", class: "img"
-          .Content__like__end__swiper-container__swiper-wrapper__swiper-slide
+          .swiper-slide
             = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
               = image_tag "recommended/front3.jpg", class: "img"
-        .Content__like__end__swiper-container__swiper-button-prev
-        .Content__like__end__swiper-container__swiper-button-next 
-        .Content__like__end__swiper-container__swiper-
-        
+        .swiper-button-prev
+        .swiper-button-next 
+        .swiper-pagination
 
-
-
-      -# %ul.Content__like__end__ul
-      -#   %li.Content__like__end__ul__li
-      -#   = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
-      -#     = image_tag "recommended/front1.jpg", class: "img"
-      -#   %li.Content__like__end__ul__li
-      -#   = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
-      -#     = image_tag "recommended/front2.jpg", class: "img"
-      -#   %li.Content__like__end__ul__li
-      -#   = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
-      -#     = image_tag "recommended/front3.jpg", class: "img"
     .Content__like__end
       バックエンド編
-      %ul.Content__like__end__ul
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/4297114623", class: "categorys-book" do
-          = image_tag "recommended/back1.jpg", class: "img"
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/4295003867", class: "categorys-book" do
-          = image_tag "recommended/back2.jpg", class: "img"
-        %li.Content__like__end__ul__li
-        = link_to "https://amazon.co.jp/dp/B07Z63J7Z4", class: "categorys-book" do
-          = image_tag "recommended/back3.jpg", class: "img"
-    -# .swiper-button-prev
-    -# .swiper-button-next 
-    -# .swiper-pagination
+      //swiperの実装
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            = link_to "https://amazon.co.jp/dp/4297114623", class: "categorys-book" do
+              = image_tag "recommended/back1.jpg", class: "img"
+          .swiper-slide
+            = link_to "https://amazon.co.jp/dp/4295003867", class: "categorys-book" do
+              = image_tag "recommended/back2.jpg", class: "img"
+          .swiper-slide
+            = link_to "https://amazon.co.jp/dp/B07Z63J7Z4", class: "categorys-book" do
+              = image_tag "recommended/back3.jpg", class: "img"
+        .swiper-button-prev
+        .swiper-button-next 
+        .swiper-pagination
 
 .Data
   .Data__categorys
@@ -117,41 +107,3 @@
   .New__book
     = link_to "新しい本の追加", new_card_path
 
-.swiper-container
-  / メイン表示部分
-  .swiper-wrapper
-    / 各スライド
-    .swiper-slide
-      = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
-        = image_tag "recommended/front1.jpg", class: "img"
-
-    .swiper-slide
-      = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
-        = image_tag "recommended/front2.jpg", class: "img"
-
-    .swiper-slide
-      = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
-        = image_tag "recommended/front3.jpg", class: "img"
-  .swiper-button-prev
-  .swiper-button-next
-  .swiper-pagination
--# %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"}
--# :javascript
--#   var mySwiper = new Swiper ('.swiper-container', {
--#     loop: true,        //画像のループ
--#     effect: 'slide',   //切り替わるときのアニメーション
--#     speed: 3000,       //画像の切替スピード
--#     autoplay: {        //自動で動かす
--#       delay: 3000,
--#       disableOnInteraction: true
--#     },
--#     pagination: {      //ページネーション
--#       el: '.swiper-pagination',
--#       type: 'bullets',
--#       clickable: true
--#     },
--#     navigation: {      //ナビケーション
--#       nextEl: '.swiper-button-next',
--#       prevEl: '.swiper-button-prev',
--#     },
--#   });
