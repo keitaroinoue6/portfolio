@@ -92,22 +92,22 @@
       font-size: 24px;
       margin: 50px;
       
-      &__swiper-container {
+      .swiper-container {
         display: flex;
         margin-top: 20px;
         padding: 20px;
         justify-content: center;
-        &__swiper-wrapper {
-          margin: 30px;
-          display: flex;
-          &__swiper-slide {
-            margin: 30px;
-          }
-        }
+      }
+      .swiper-wrapper {
+        margin: 30px;
+        display: flex;
+      }
+      .swiper-slide {
+        margin: 30px;
       }
     }
+      
   }
-
 }
 
 
