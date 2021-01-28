@@ -92,18 +92,18 @@
       font-size: 24px;
       margin: 50px;
       
-      &__ul {
-        display: flex;
+      .swiper-container {
+        width: 40%;  //全体の幅の設定
         margin-top: 20px;
-        padding: 20px;
-        justify-content: center;
+        padding: 20px; //画像と矢印の幅の設定
       }
-      li {
-        margin: 30px;
+
+      .swiper-slide {
+        text-align: center;
       }
     }
+      
   }
-
 }
 
 
