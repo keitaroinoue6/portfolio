@@ -55,15 +55,15 @@
     .Content__like__end
       フロントエンド編
       //swiperの実装
-      .swiper-container
-        .swiper-wrapper
-          .swiper-slide
+      .Content__like__end__container.swiper-container
+        .Content__like__end__container__wrapper.swiper-wrapper
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/4839956758/", class: "categorys-book" do
               = image_tag "recommended/front1.jpg", class: "img"
-          .swiper-slide
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/4797398892/", class: "categorys-book" do
               = image_tag "recommended/front2.jpg", class: "img"
-          .swiper-slide
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/4797383585", class: "categorys-book" do
               = image_tag "recommended/front3.jpg", class: "img"
         .swiper-button-prev
@@ -73,20 +73,20 @@
     .Content__like__end
       バックエンド編
       //swiperの実装
-      .swiper-container
-        .swiper-wrapper
-          .swiper-slide
+      .Content__like__end__container.swiper-container
+        .Content__like__end__container__wrapper.swiper-wrapper
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/4297114623", class: "categorys-book" do
               = image_tag "recommended/back1.jpg", class: "img"
-          .swiper-slide
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/4295003867", class: "categorys-book" do
               = image_tag "recommended/back2.jpg", class: "img"
-          .swiper-slide
+          .Content__like__end__container__wrapper__slide.swiper-slide
             = link_to "https://amazon.co.jp/dp/B07Z63J7Z4", class: "categorys-book" do
               = image_tag "recommended/back3.jpg", class: "img"
-        .swiper-button-prev
-        .swiper-button-next 
-        .swiper-pagination
+        .Content__like__end__prev.swiper-button-prev
+        .Content__like__end__next.swiper-button-next
+        .Content__like__end__pagination.swiper-pagination
 
 .Data
   .Data__categorys
