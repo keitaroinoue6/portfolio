@@ -1,5 +1,5 @@
 .Main {
-  background-image: image-url('book1.jpg');
+  background: image-url("book1.jpg");
   background-size: cover;
   position: relative;
   &__header{
@@ -65,7 +65,7 @@
 
 .Content {
   margin: 2px;
-  background-image: image-url('book2.jpg');
+  background: image-url('book2.jpg');
   background-size: cover;
   animation: SlideIn 7.6s;
   @keyframes SlideIn {
