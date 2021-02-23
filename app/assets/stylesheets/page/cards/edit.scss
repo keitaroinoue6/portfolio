@@ -3,7 +3,7 @@
   height: 100%;
   font-weight: bolder;
   &__main {
-    background-image: url(edit.jpg);
+    background-image: image-url("edit.jpg");
     background-size: cover;
     animation: slideIn 4.3s;
     @keyframes slideIn {

@@ -58,3 +58,4 @@ gem "font-awesome-sass"
 gem 'jquery-rails'
 gem 'ancestry'
 gem 'kaminari'
+gem 'devise'
