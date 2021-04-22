@@ -10,3 +10,15 @@
 @import "page/categories/show.scss";
 @import "page/devise/registrations/new.scss";
 @import "page/devise/sessions/new.scss";
+
+.mw-md {
+  max-width: 576px;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
