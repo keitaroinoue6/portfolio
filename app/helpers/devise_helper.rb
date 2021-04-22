@@ -1,3 +1,5 @@
+# エラーメッセージの表示の変更
+
 module DeviseHelper
   def bootstrap_devise_error_messages!
     return "" if resource.errors.empty?

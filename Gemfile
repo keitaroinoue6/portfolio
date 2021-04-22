@@ -61,4 +61,4 @@ gem 'devise'
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
 
-gem 'devise-bootstrap-views', '~>1.0'
+# gem 'devise-bootstrap-views', '~>1.0'
