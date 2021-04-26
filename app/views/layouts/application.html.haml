@@ -12,6 +12,6 @@
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"}
   %body
     //devise関連のページのみ最大の横幅を576pxとして、それ以外は別の横幅にする
-    //条件分岐でふよするクラスを付け替え
-    %div{:class => "container-fluid py-4 #{devise_controller? ? 'mw-md' : 'mw-xl'}"}
+    //条件分岐で付与するクラスを付け替え
+    %div{:class => "container-fluid #{devise_controller? ? 'mw-md' : 'mw-xl'}"}
       = yield
