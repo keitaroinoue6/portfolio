@@ -4,6 +4,7 @@
       = link_to "ログアウト", destroy_user_session_path, method: :delete
       = link_to "投稿する", new_card_path
     - else
+      = icon("fas", "sign-in-alt")
       = link_to "ログイン", new_user_session_path
       = link_to "新規登録", new_user_registration_path
   .Main__header
