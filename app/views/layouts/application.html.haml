@@ -14,4 +14,11 @@
     //devise関連のページのみ最大の横幅を576pxとして、それ以外は別の横幅にする
     //条件分岐で付与するクラスを付け替え
     %div{:class => "container-fluid #{devise_controller? ? 'mw-md' : 'mw-xl'}"}
-      = yield
+    -# %header
+    -#   - if user_signed_in?
+    -#     = link_to "ログアウト", destroy_user_session_path, method: :delete
+    -#     = link_to "投稿する", new_card_path
+    -#   - else
+    -#     = link_to "ログイン", new_user_session_path
+    -#     = link_to "新規登録", new_user_registration_path
+= yield
