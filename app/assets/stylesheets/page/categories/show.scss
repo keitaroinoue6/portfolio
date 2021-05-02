@@ -10,6 +10,7 @@
   &__lists {
     padding: 40px;
     &__list {
+      display: flex;
       padding: 30px;
       &__title {
         width: 70%;
@@ -28,7 +29,7 @@
           cursor: pointer;
           text-decoration: none;
         }
-        &:after {
+        &:after { //タイトルにカーソルを当てた時の動き
           position: absolute;
           bottom: -8px;
           left: 0;
@@ -50,8 +51,8 @@
         padding-left: 30px;
         a {
           text-decoration: none;
-          color: #333;
-          &:hover {
+          color:red;
+          &:hover { //hoverした時に下線の表示
             border-bottom: double #333;
           }
         }
