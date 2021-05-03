@@ -1,6 +1,6 @@
  <div class="container-login">
   <h1><%= t('.sign_in') %></h1>
-  <%= render 'layouts/flash_messages' %>  <%# ログイン画面でもエラーメッセージが表示されていないので追加 %>
+  <%= render 'layouts/flash_messages' %>  <%# ログイン画面でエラーメッセージが表示されていないので追加 %>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-group">
       <%= f.label :email %>
