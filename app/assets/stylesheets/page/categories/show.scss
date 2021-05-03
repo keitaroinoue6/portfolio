@@ -13,7 +13,7 @@
       display: flex;
       padding: 30px;
       &__title {
-        width: 70%;
+        width: 85%;
         margin: 20px;
         margin-right: 30px;
         font-size: 25px;
@@ -48,8 +48,11 @@
         }
       }
       &__btn {
-        padding-left: 30px;
+        margin: 20px;
+        width: 15%;
+        text-align: right;
         a {
+          margin-right: 30px;
           text-decoration: none;
           color:red;
           &:hover { //hoverした時に下線の表示
