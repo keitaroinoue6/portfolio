@@ -111,7 +111,8 @@
   = render partial: "card"
 
 .Pagenation
-  = paginate @cards
+  .Pagenation__page
+    = paginate @cards
 
 .New
   .New__book

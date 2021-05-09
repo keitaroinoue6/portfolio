@@ -223,17 +223,17 @@
 }
 //ページネーションのデザイン
 .Pagenation{
-  text-align: center;
+  margin-left: 120px;
   font-size: 18px;
   a {
+    margin: 20px;
     color: #1b1b1b;
-    background: khaki;
-    //border-radius: 15px;
     text-decoration: none;
   }
 }
 // 新しい本の追加
 .New {
+  margin-bottom: 30px;
   text-align: center;
   &__book {
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.25);
